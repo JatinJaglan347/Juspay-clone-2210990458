@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://juspay.in/favicon-32x32.png?v=1d6fb84be8e98739452c628e69a6ce2d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Making payments simple and secure - Juspay</title>
+</head>
+<body>
+    <section class="z-50"> 
+        <div class="flex text-center justify-center items-center bg-blue-500 fixed w-full z-50"> 
+            <h1 class=" text-yellow-400 items-center justify-center text-center text-3xl animate-pulse"><ion-icon name="warning"></ion-icon></h1>
+            <h1 class=" text-red-600 md:text:xl">This website is built using the Tailwind CSS, and it is fully responsive.</h1>
+            <h1 class=" text-yellow-400 items-center justify-center text-center text-3xl animate-pulse"><ion-icon name="warning"></ion-icon></h1>
+        </div>
+    </section>
+    <header>
+        <section class="">
+            <div>
+                <nav class=" lg:px-40 bg-white md:flex md:bg-[#222428] md:justify-between pt-10">
+                    <div class=" bg-[#222428] flex justify-between items-center md:z-20 ">
+                        <a href="#" class="py-3 pl-6 md:py-0 md:pt-3" ><img src="https://juspay.in/logo_juspay.svg" alt=""></a>
+                        <div class="text-4xl text-white pr-7 md:hidden" >
+                            <ion-icon onclick="onToggleMenu(this)" name="menu-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class=" nav-links flex flex-col justify-center items-center text-center space-y-3 absolute py-6 bg-white w-full top-[-100%] md:flex-row md:bg-[#222428] md:text-white md:top-0 md:py-2 md:items-end md:space-x-9 md:w-auto md:relative">
+                        <ul class="flex flex-col justify-center space-y-3 md:flex-row md:items-center md:space-x-9 md:space-y-0">
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>Products</li></a>
+                            <a href="#"><li>Tech</li></a>
+                            <a href="#"><li>Developers</li></a>
+                            <a href="#"><li>Blog</li></a>
+                            <a href="#"><li>Pricing</li></a>
+                            <a href="#"><li>Global</li></a>
+                        </ul>
+                        <div>
+                            <button class="px-3 py-1 text-black bg-white rounded">Signup</button>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+        </section>
+    </header>
+  
+    <main>
+        <section class="bg-[#222428] text-white p-12 grid grid-cols-1 md:grid-cols-2 xl:px-52 xl:justify-between xl:pb-0" >
+            <div class="box-content flex flex-col ">
+                <h2 class=" text-4xl text-[#80A3EA] font-black ">India’s</h2>
+                <h1 class=" text-5xl font-extrabold lg:text-6xl xl:leading-[5rem] ">Payments<br class="br--none"> Operating <br class="br--none"> System</h1>
+                <p class="pt-5 pb-5 text-sm leading-7 lg:text-lg md:w-5/6 xl:text-base xl:leading-8">We unify payment gateways to give you a seamless, secure, reliable, end-to-end, enterprise-grade payment stack to achieve higher revenue at lower cost</p>
+                <a class=" mb-14" href="#"><button class="box-border bg-[#05f] rounded-lg p-3 text-xl ">Learn More</button></a>
+            </div> 
+            <div class="flex items-center md:w-5/6 ">
+                <img src="https://juspay.in/homepage--hero--illustration.png" alt="" class="object-cover h-full" >
+            </div>
+        </section>
+        <section class=" w-full flex flex-col bg-[#F4F9FD] text-center items-center justify-center py-20 ">
+            <div class="flex ">
+                <h2 class="px-4 mb-8 text-3xl font-bold ">Trusted by leading companies</h2>
+            </div>
+            <div>
+                <div class="justify-between w-11/12 md:flex md:space-x-24">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_myntra_lg.svg" alt="">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_bigbasket_lg.svg" alt="">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_meesho_lg.svg" alt="">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_cred_lg.svg" alt="">
+                </div>
+                <div class="items-center justify-between w-11/12 md:ml-16 md:flex md:space-x-16">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_ola_lg.svg" alt="">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_airtel_lg.svg" alt="">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_mmt_lg.svg" alt="">
+                    <img class="w-32 p-2 lg:w-44" src="https://juspay.in/customers/logo_jio_lg.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="bg-[url('https://juspay.in/static/bg_circular_dotted_white.png')] bg-no-repeat bg-contain bg-center w-full h-auto py-32 p-11 xl:px-52">
+            <div class="mb-20 xl:w-7/12">
+                <h2 class=" text-4xl font-bold text-[#082449] md:text-5xl lg:text-6xl ">Bulk of India's Mobile Payments Go through Juspay.</h2>
+            </div>
+            <div class="">
+                <div class="grid grid-cols-2 text-center place-items-center md:grid-cols-4 lg:pb-20">
+                    <div class="mb-5 ">
+                        <div><img class="flex items-center justify-center w-auto m-auto mb-6 text-center place-items-center" src="https://juspay.in/payments--transactions.svg" alt=""></div>
+                        <h2 class="text-[#234EA4] text-3xl font-bold mb-4 md:text-5xl">100<span class="font-medium ">Mn+</span></h2>
+                        <p class="text-sm md:text-xl"><span class="text-[#234EA4] font-semibold mb-3"> Transactions <br> </span> processed every day</p>
+                    </div>
+                    <div class="mb-5 ">
+                        <div><img class="flex items-center justify-center w-auto m-auto mb-6 text-center place-items-center" src="https://juspay.in/payments--uptime.svg" alt=""></div>
+                        <h2 class="text-[#234EA4] text-3xl font-bold mb-4 md:text-5xl">99.95<span class="font-medium">%</span></h2>
+                        <p class="text-sm md:text-xl"><span class="text-[#234EA4]"> Uptime <br> </span> best in class</p>
+                    </div>
+                    <div class="mb-5 ">
+                        <div><img class="flex items-center justify-center w-auto m-auto mb-6 text-center place-items-center" src="https://juspay.in/payments--mobiledevices.svg" alt=""></div>
+                        <h2 class="text-[#234EA4] text-3xl font-bold mb-4 md:text-5xl">1.5<span class="font-medium">Bn+</span></h2>
+                        <p class="text-sm md:text-xl"><span class="text-[#234EA4]"> App Installs <br> </span> with Juspay SDKs</p>
+                    </div>
+                    <div class="mb-5 ">
+                        <div><img class="flex items-center justify-center w-auto m-auto mb-6 text-center place-items-center" src="https://juspay.in/payments--trillion.svg" alt=""></div>
+                        <h2 class="text-[#234EA4] text-3xl font-bold mb-4 md:text-5xl">$500<span class="font-medium">Bn+</span></h2>
+                        <p class="text-sm md:text-xl"><span class="text-[#234EA4]"> Annualized <br> </span> TPV</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="w-full h-auto py-32 bg-center bg-no-repeat bg-contain bg-[#222428] p-11 xl:px-52 ">
+            <div class="mb-20 xl:w-9/12">
+                <h2 class="text-4xl font-bold text-white md:text-5xl lg:text-5xl">End-to-End Payments Stack <br class="br--none"> To accelerate Your 10x growth</h2>
+            </div>
+            <div>
+                <div class=" grid grid-cols-1 lg:grid-cols-2 mt-24">
+                    <div>
+                        <img src="https://juspay.in/solution--stack--img1.png" alt="">
+                    </div>
+                    <div class="md:pl-14 lg:pl-24 ">
+                        <h3 class="text-[#9E9FA1] font-bold tracking-widest leading-4 md:text-base mt-5">NATIVE SDK WITH 1-CLICK EXPERIENCE</h3>
+                        <h2 class="text-[#80A3EA] text-3xl  font-bold mt-5 md:text-4xl lg:text-4xl">Superior UX to improve your NPS</h2>
+                        <p class=" text-white text-xs leading-7 font-normal mt-5 md:text-sm md:leading-9 ">Blended Native Payment Page, In-App UPI, 1-click card payments and more innovative offerings</p>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 lg:grid-cols-2 mt-24">
+                    <div>
+                        <img src="https://juspay.in/solution--stack--img2.png" alt="">
+                    </div>
+                    <div class="md:pl-14 lg:pl-24 ">
+                        <h3 class="text-[#9E9FA1] font-bold tracking-widest leading-4 md:text-base mt-5">ORCHESTRATION PLATFORM</h3>
+                        <h2 class="text-[#80A3EA] text-3xl  font-bold mt-5 md:text-4xl lg:text-4xl">5-10% higher conversions</h2>
+                        <p class=" text-white text-xs leading-7 font-normal mt-5 md:text-sm md:leading-9 ">100+ integrations, intelligent routing, automatic retries, optimized with data from billions of transactions</p>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 lg:grid-cols-2 mt-24">
+                    <div>
+                        <img src="https://juspay.in/solution--stack--img3.png" alt="">
+                    </div>
+                    <div class="md:pl-14 lg:pl-24">
+                        <h3 class="text-[#9E9FA1] font-bold tracking-widest leading-4 md:text-base mt-5">END TO END SOLUTIONS FOR SCALE</h3>
+                        <h2 class="text-[#80A3EA] text-3xl  font-bold mt-5 md:text-4xl lg:text-4xl">Reduce your payment OPS by 80%</h2>
+                        <p class=" text-white text-xs leading-7 font-normal mt-5 md:text-sm md:leading-9 ">Fully managed infrastructure and automated workflows designed for scale, security and reliability </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    
+    <footer class=" bg-[#F4F9FD]">
+        <section class="grid grid-cols-2 py-40 p-11 text-sm text-[#838688] leading-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 lg:px-12 xl:px-52">
+            <nav class="">
+                <nav class="flex flex-col mb-10">
+                    <h3 class=" text-2xl text-[#313233] font-bold">Company</h3>
+                    <a class="" href="#">About Us</a>
+                    <a class="" href="#">Tech</a>
+                    <a class="" href="#">Careers</a>
+                    <a class="" href="#">Contact</a>
+                    <a class="" href="#">Newsroom</a>
+                </nav>
+            </nav>
+            <nav class="">
+                <nav class="flex flex-col mb-10">
+                    <h3 class="text-2xl text-[#313233] font-bold">Products</h3> 
+                    <a class="" href="#">Tokenization</a>
+                    <a class="" href="#">UPI Full Stack</a>
+                    <a class="" href="#">Ecosystem Products</a>
+                    <a class="" href="#">Hypercredit</a>
+                    <a class="" href="#">HyperCheckout</a>
+                    <a class="" href="#">Express Checkout</a>
+                    <a class="" href="#">Hyper SDK</a>
+                </nav>
+            </nav>
+            <nav class="">
+                <nav class="flex flex-col mb-10 ">
+                    <h3 class="text-2xl text-[#313233] font-bold">Resources</h3>
+                    <a class=""href="#">Merchant Home</a>
+                    <a class="" href="#">API Documentation</a>
+                    <a class="" href="#">Blog</a>
+                </nav>
+            </nav>
+            <nav class="">
+                <nav class="flex flex-col mb-10">
+                    <h3 class="text-2xl text-[#313233] font-bold">Compliance</h3> 
+                    <a class="" href="#">Privacy Policy</a>
+                    <a class="" href="#">Terms of Service</a>
+                    <a class="" href="#">FAQ</a>
+                    <a class="" href="#">Vulnerability Disclosure</a>
+                    <a class="" href="#">Payment Aggregation</a>
+                </nav>
+            </nav>
+            <nav class="flex flex-col space-y-14">
+                <div class="flex space-x-9">
+                    <img class="w-24 h-14" src="https://juspay.in/footer/pci.png" alt="compliance">
+                    <img class="w-20 h-20 " src="https://juspay.in/footer/iso27001.png" alt="compliance">
+                    <img class="w-20 h-20 " src="https://juspay.in/footer/soc.png" alt="compliance">
+                </div>
+                <div class="flex space-x-9 ">
+                    <a href="#" class=""><figure><img src="https://juspay.in/social/logo_gmail.svg" alt="gmail"></figure></a>
+                    <a href="#" class=""><figure><img src="https://juspay.in/social/logo_linkedin.svg" alt="linkedin"></figure></a>
+                    <a href="#" class=""><figure><img src="https://juspay.in/social/logo_twitter.svg" alt="twitter"></figure></a>
+                </div>
+            </nav>
+        </section>
+            
+    </footer>
+    
+    <script>
+        const navLinks = document .querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name =e.name === 'menu-outline' ? 'close-outline' : 'menu-outline' ;
+            navLinks.classList.toggle('top-[12%]')
+        }
+    </script>
+</body>
+</html>
